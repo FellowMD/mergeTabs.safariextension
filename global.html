@@ -1,0 +1,41 @@
+<html>
+<body>
+<script>
+
+safari.application.addEventListener("command", commandHandler, false);
+
+function commandHandler(event)
+{
+	switch (event.command) {
+		case "mergeAll":
+			mergeAllWindows()
+			break
+		case "mergeOthers":
+			mergeOtherWindows()
+	}
+}
+
+function mergeAllWindows(){
+	while (safari.application.browserWindows.length > 1) {
+		w1 = safari.application.browserWindows[0]
+		w2 = safari.application.browserWindows[1]
+		mergeTwoWindows(w1, w2)
+	}
+}
+
+function mergeOtherWindows(){
+	while (safari.application.browserWindows.length > 2) {
+		w1 = safari.application.browserWindows[1]
+		w2 = safari.application.browserWindows[2]
+		mergeTwoWindows(w1, w2)
+	}
+}
+
+function mergeTwoWindows(window1, window2){
+	while (window2.tabs) {
+		window1.insertTab(window2.tabs[0], window1.tabs.length) // insert at end
+	}
+}
+</script>
+</body>
+</html>

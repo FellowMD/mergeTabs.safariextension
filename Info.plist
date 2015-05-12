@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Author</key>
+	<string>Aaron Sikes</string>
+	<key>Builder Version</key>
+	<string>10600.3.18</string>
+	<key>CFBundleDisplayName</key>
+	<string>Merge Tabs</string>
+	<key>CFBundleIdentifier</key>
+	<string>io.sikes.aaron.safari.mergeTabs</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>Chrome</key>
+	<dict>
+		<key>Global Page</key>
+		<string>global.html</string>
+		<key>Menus</key>
+		<array>
+			<dict>
+				<key>Identifier</key>
+				<string>mergeTabsMenu</string>
+				<key>Menu Items</key>
+				<array>
+					<dict>
+						<key>Command</key>
+						<string>mergeAll</string>
+						<key>Identifier</key>
+						<string>mergeAllMenuItem</string>
+						<key>Title</key>
+						<string>Merge All Windows</string>
+					</dict>
+					<dict>
+						<key>Command</key>
+						<string>mergeOthers</string>
+						<key>Identifier</key>
+						<string>mergeOthersMenuItem</string>
+						<key>Title</key>
+						<string>Merge All Other Windows</string>
+					</dict>
+				</array>
+			</dict>
+		</array>
+		<key>Toolbar Items</key>
+		<array>
+			<dict>
+				<key>Command</key>
+				<string>mergeAll</string>
+				<key>Identifier</key>
+				<string>mergeTabsButton</string>
+				<key>Image</key>
+				<string>icon.png</string>
+				<key>Label</key>
+				<string>Merge Tabs</string>
+				<key>Menu</key>
+				<string>mergeTabsMenu</string>
+				<key>Tool Tip</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>Content</key>
+	<dict>
+		<key>Scripts</key>
+		<dict/>
+	</dict>
+	<key>Description</key>
+	<string>Merge the tabs of various windows</string>
+	<key>DeveloperIdentifier</key>
+	<string>RMF6T2SG9X</string>
+	<key>ExtensionInfoDictionaryVersion</key>
+	<string>1.0</string>
+	<key>Permissions</key>
+	<dict>
+		<key>Website Access</key>
+		<dict>
+			<key>Level</key>
+			<string>None</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
